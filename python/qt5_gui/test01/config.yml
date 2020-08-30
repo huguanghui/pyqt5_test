@@ -1,0 +1,12 @@
+board_info: AHB8308HIB-AIStick
+client_type: "\u6807\u51C6\u7248\u672C"
+dist_target: Z:/AHB-83xxHFT(HIB-AI)
+lib_dir: X:/SVN/06_AI_HVR/trunk/src/DVR_SDK/lib_35xxD-static
+pack_dir: http://192.168.250.4/svn/zview_4sdi_dvr/software/projects_2018/01_HVR/04devs/03_packages/AHB83XXHIB_AI/AHB8308HIB_AIStick/v2.4.2/20200830/v2.4.2.31204.general
+svn_ver: 31204
+test_list_dir: "\\\\192.168.250.10\\TestFolder\\HVR\\AHB-83xxHFT(HIB-AI)\\AHB-8308HIB-AiStick\\\
+  \u6807\u51C6\u7248\u672C\\v2.4.2\\20200830\\v2.4.2.31204.general"
+test_list_url: http://192.168.250.9:82/zentao/testtask-view-5839.html
+test_name: "AHB8308HIB-AIStick_General_HVR.v2.4.2.20200830 \u8F6F\u4EF6\u6807\u51C6\
+  \u7248\u672C\u6D4B\u8BD5"
+ver_info: v2.4.2

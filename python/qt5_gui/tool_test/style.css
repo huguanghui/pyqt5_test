@@ -1,0 +1,14 @@
+QListView#listView {
+	background:#83c971;
+	margin: 0, 0, 0, 0;
+	border-radius: 3px;
+	border: 1px solid gray;
+}
+
+QWidget#Form {
+	background: #66f7eb;
+}
+
+QTableView#tableView {
+	background: #4b73bd;
+}
