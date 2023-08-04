@@ -17,8 +17,8 @@
    <widget class="CheckBox" name="CheckBox">
     <property name="geometry">
      <rect>
-      <x>220</x>
-      <y>60</y>
+      <x>240</x>
+      <y>50</y>
       <width>92</width>
       <height>22</height>
      </rect>
@@ -50,26 +50,6 @@
      </rect>
     </property>
    </widget>
-   <widget class="IconWidget" name="IconWidget">
-    <property name="geometry">
-     <rect>
-      <x>460</x>
-      <y>120</y>
-      <width>111</width>
-      <height>91</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="ToolButton" name="ToolButton">
-    <property name="geometry">
-     <rect>
-      <x>240</x>
-      <y>350</y>
-      <width>91</width>
-      <height>51</height>
-     </rect>
-    </property>
-   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
@@ -90,11 +70,6 @@
    <header>qfluentwidgets</header>
   </customwidget>
   <customwidget>
-   <class>ToolButton</class>
-   <extends>QToolButton</extends>
-   <header>qfluentwidgets</header>
-  </customwidget>
-  <customwidget>
    <class>SwitchButton</class>
    <extends>QWidget</extends>
    <header>qfluentwidgets</header>
@@ -102,11 +77,6 @@
   <customwidget>
    <class>RadioButton</class>
    <extends>QRadioButton</extends>
-   <header>qfluentwidgets</header>
-  </customwidget>
-  <customwidget>
-   <class>IconWidget</class>
-   <extends>QWidget</extends>
    <header>qfluentwidgets</header>
   </customwidget>
  </customwidgets>
