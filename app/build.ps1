@@ -8,6 +8,7 @@ Write-Host "Pyqt5 build..." -ForegroundColor green
 
 # compile
 pyuic5.exe ./View/main_window/main.ui -o ./View/main_window/ui_main.py -x
+pyuic5.exe ./View/page01/page01.ui -o ./View/page01/ui_page01.py -x
 
 python PTool.py
 
