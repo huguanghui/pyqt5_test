@@ -10,6 +10,7 @@ from common.setting import APP_NAME
 # from common.dpi_manager import DPI_SCALE
 from View.main_window import MainWindow
 from View.page01 import Page01Test
+from View.page02 import Page02Test
 
 import os
 import sys
@@ -32,20 +33,22 @@ class Window(SplitFluentWindow):
 
         # create sub interface
         self.page01 = Page01Test(self)
+        self.page02 = Page02Test(self)
 
         self.initNavigation()
 
     def initNavigation(self):
         # add sub interface
         self.addSubInterface(self.page01, FIF.RINGER, '专注时段')
+        self.addSubInterface(self.page02, FIF.RINGER, '流播放')
         # self.addSubInterface(self.stopWatchInterface, FIF.STOP_WATCH, '秒表')
 
-        self.navigationInterface.addWidget(
-            routeKey='avatar',
-            widget=NavigationAvatarWidget('zhiyiYo', 'resource/images/shoko.png'),
-            onClick=self.showMessageBox,
-            position=NavigationItemPosition.BOTTOM,
-        )
+        # self.navigationInterface.addWidget(
+        #     routeKey='avatar',
+        #     widget=NavigationAvatarWidget('zhiyiYo', 'resource/images/shoko.png'),
+        #     onClick=self.showMessageBox,
+        #     position=NavigationItemPosition.BOTTOM,
+        # )
         self.navigationInterface.addItem(
             routeKey='settingInterface',
             icon=FIF.SETTING,
