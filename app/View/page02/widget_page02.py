@@ -15,6 +15,13 @@ class Page02Test(Ui_Page02Test, QWidget):
 
     def ui_init(self):
         print("ui_init")
-        self.videostream.setPixmap(QPixmap(':/images/test.jpg').scaled(
-            160, 160, Qt.KeepAspectRatio, Qt.SmoothTransformation))
+        video_w = self.videostream.width()
+        video_h = self.videostream.height()
+        print(video_w, video_h)
+        m_w = self.videostream.geometry().width()
+        m_h = self.videostream.geometry().height()
+        print(m_w, m_h)
+        # self.videostream.setPixmap(QPixmap(':/images/test.jpg').scaled(
+        #     260, 260, Qt.KeepAspectRatio, Qt.SmoothTransformation))
+        self.videostream.setPixmap(QPixmap(':/images/test.jpg'))
         # self.videostream

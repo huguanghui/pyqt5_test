@@ -1,27 +1,56 @@
-from common import resource
-from common.setting import APP_NAME, VERSION
-from .ui_main import Ui_MainWindow
-from PyQt5 import QtWidgets
-from PyQt5.QtWidgets import QMainWindow, QStatusBar, QWidget, QHBoxLayout
-from PyQt5.QtWidgets import QMessageBox, QFileDialog, QFrame, QCheckBox
-from PyQt5.QtGui import QFont, QIcon
+# coding:utf-8
+import sys
+
+from PyQt5.QtCore import Qt, QUrl
+from PyQt5.QtGui import QIcon, QDesktopServices
+from PyQt5.QtWidgets import QApplication, QFrame, QHBoxLayout
+from qfluentwidgets import (NavigationItemPosition, MessageBox, setTheme, Theme, FluentWindow,
+                            NavigationAvatarWidget, qrouter, SubtitleLabel, setFont, InfoBadge,
+                            InfoBadgePosition)
+from qfluentwidgets import FluentIcon as FIF
+
+from common.setting import APP_NAME
+from View.page01 import Page01Test
+from View.page02 import Page02Test
+from View.setting_interface import SettingInterface
+
+class Widget(QFrame):
+    def __init__(self, text: str, parent=None):
+        super().__init__(parent=parent)
+        self.label = SubtitleLabel(text, self)
+        self.hBoxLayout = QHBoxLayout(self)
+
+        setFont(self.label, 24)
+        self.label.setAlignment(Qt.AlignCenter)
+        self.hBoxLayout.addWidget(self.label, 1, Qt.AlignCenter)
+        self.setObjectName(text.replace(' ', '-'))
 
 
-class MainWindow(QMainWindow, Ui_MainWindow):
+class MainWindow(FluentWindow):
+
     def __init__(self):
-        super(MainWindow, self).__init__()
-        self.file_name = ""
-        self.total_num = 0
-        self.used_num = 0
-        self.status_bar = QStatusBar()
-        self.setupUi(self)
-        self.ui_init()
-        self.setWindowTitle(f"{APP_NAME} {VERSION}")
-        self.setWindowIcon(QIcon(":/images/logo/logo.ico"))
-        self.setStatusBar(self.status_bar)
+        super().__init__()
 
-    def ui_init(self):
-        print("ui_init")
-        # self.le_encry_refresh()
-        font = QFont("微软雅黑", 10)
-        font.setBold(True)
+        # create sub interface
+        self.homeInterface = Widget('Search Interface', self)
+        self.musicInterface = Widget('Music Interface', self)
+        self.settingInterface = SettingInterface(self)
+
+        self.initNavigation()
+        self.initWindow()
+
+    def initNavigation(self):
+        self.addSubInterface(self.homeInterface, FIF.HOME, 'Home')
+        self.addSubInterface(self.musicInterface, FIF.MUSIC, 'Music library')
+
+        # add custom widget to bottom
+        self.addSubInterface(self.settingInterface, FIF.SETTING, 'Settings', NavigationItemPosition.BOTTOM)
+
+    def initWindow(self):
+        self.resize(900, 700)
+        self.setWindowIcon(QIcon(':/qfluentwidgets/images/logo.png'))
+        self.setWindowTitle(APP_NAME)
+
+        desktop = QApplication.desktop().availableGeometry()
+        w, h = desktop.width(), desktop.height()
+        self.move(w // 2 - self.width() // 2, h // 2 - self.height() // 2)

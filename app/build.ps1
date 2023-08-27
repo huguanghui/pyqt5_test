@@ -7,7 +7,6 @@ pyrcc5.exe ./resource/resource.qrc -o ./common/resource.py
 # python ../tools/designer.py .\View\main_window\main.ui
 
 # compile
-pyuic5.exe ./View/main_window/main.ui -o ./View/main_window/ui_main.py -x
 pyuic5.exe ./View/page01/page01.ui -o ./View/page01/ui_page01.py -x
 pyuic5.exe ./View/page02/page02.ui -o ./View/page02/ui_page02.py -x
 
