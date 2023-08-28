@@ -57,4 +57,12 @@
         <translation>触发</translation>
     </message>
 </context>
+<context>
+    <name>Page02Test</name>
+    <message>
+        <location filename="../../View/page02/ui_page02.py" line="45"/>
+        <source>Form</source>
+        <translation type="unfinished">表格</translation>
+    </message>
+</context>
 </TS>
