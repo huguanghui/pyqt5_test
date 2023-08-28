@@ -80,7 +80,9 @@ if __name__ == "__main__":
 
     app = QApplication(sys.argv)
     app.setApplicationName(APP_NAME)
-    translator = FluentTranslator()
+    # translator = FluentTranslator()
+    translator = QTranslator()
+    translator.load(f":/i18n/ptool.zh_CN.qm")
     app.installTranslator(translator)
     w = MainWindow()
     w.show()
