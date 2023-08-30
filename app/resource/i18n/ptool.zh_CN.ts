@@ -1,42 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="zh_CN" sourcelanguage="en">
+<!DOCTYPE TS><TS version="2.0" language="zh_CN" sourcelanguage="en">
 <context>
     <name>MainWindow</name>
     <message>
-        <location filename="../../View/main_window/ui_main.py" line="114"/>
+        <location filename="../../View/main_window/ui_main.py" line="255"/>
         <source>MainWindow</source>
         <translation>主窗口</translation>
     </message>
     <message>
-        <location filename="../../View/main_window/ui_main.py" line="115"/>
+        <location filename="../../View/main_window/ui_main.py" line="256"/>
         <source>Check</source>
         <translation>检测</translation>
     </message>
     <message>
-        <location filename="../../View/main_window/ui_main.py" line="116"/>
+        <location filename="../../View/main_window/ui_main.py" line="258"/>
         <source>Discovery</source>
         <translation>搜索</translation>
     </message>
     <message>
-        <location filename="../../View/main_window/ui_main.py" line="117"/>
+        <location filename="../../View/main_window/ui_main.py" line="257"/>
         <source>Add</source>
         <translation>添加</translation>
     </message>
     <message>
-        <location filename="../../View/main_window/ui_main.py" line="118"/>
+        <location filename="../../View/main_window/ui_main.py" line="262"/>
         <source>File</source>
         <translation>文件</translation>
     </message>
     <message>
-        <location filename="../../View/main_window/ui_main.py" line="119"/>
+        <location filename="../../View/main_window/ui_main.py" line="263"/>
         <source>Manger</source>
         <translation>管理</translation>
     </message>
     <message>
-        <location filename="../../View/main_window/ui_main.py" line="120"/>
+        <location filename="../../View/main_window/ui_main.py" line="264"/>
         <source>Help</source>
         <translation>帮助</translation>
+    </message>
+    <message>
+        <location filename="../../View/main_window/ui_main.py" line="259"/>
+        <source>Auto Discovery</source>
+        <translation>自动搜索</translation>
+    </message>
+    <message>
+        <location filename="../../View/main_window/ui_main.py" line="260"/>
+        <source>Tab 1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../View/main_window/ui_main.py" line="261"/>
+        <source>Tab 2</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -62,7 +76,7 @@
     <message>
         <location filename="../../View/page02/ui_page02.py" line="45"/>
         <source>Form</source>
-        <translation type="unfinished">表格</translation>
+        <translation>表格</translation>
     </message>
 </context>
 </TS>

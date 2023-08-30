@@ -45,20 +45,150 @@ class Ui_MainWindow(object):
         self.verticalLayout_2 = QtWidgets.QVBoxLayout(self.widget_3)
         self.verticalLayout_2.setObjectName("verticalLayout_2")
         self.TableWidget = TableWidget(self.widget_3)
+        self.TableWidget.setStyleSheet("QTableView {\n"
+"    background: transparent;\n"
+"    outline: none;\n"
+"    border: none;\n"
+"    /* font: 13px \'Segoe UI\', \'Microsoft YaHei\'; */\n"
+"    selection-background-color: transparent;\n"
+"    alternate-background-color: transparent;\n"
+"}\n"
+"\n"
+"QTableView::item {\n"
+"    background: transparent;\n"
+"    border: 0px;\n"
+"    padding-left: 16px;\n"
+"    padding-right: 16px;\n"
+"    height: 35px;\n"
+"}\n"
+"\n"
+"\n"
+"QTableView::indicator {\n"
+"    width: 18px;\n"
+"    height: 18px;\n"
+"    border-radius: 5px;\n"
+"    border: 1px solid rgba(0, 0, 0, 0.48);\n"
+"    background-color: rgba(0, 0, 0, 0.022);\n"
+"}\n"
+"\n"
+"QTableView::indicator:hover {\n"
+"    border: 1px solid rgba(0, 0, 0, 0.56);\n"
+"    background-color: rgba(0, 0, 0, 0.05);\n"
+"}\n"
+"\n"
+"QTableView::indicator:pressed {\n"
+"    border: 1px solid rgba(0, 0, 0, 0.27);\n"
+"    background-color: rgba(0, 0, 0, 0.12);\n"
+"}\n"
+"\n"
+"QTableView::indicator:checked,\n"
+"QTableView::indicator:indeterminate {\n"
+"    border: 1px solid #009faa;\n"
+"    background-color: #009faa;\n"
+"}\n"
+"\n"
+"QTableView::indicator:checked {\n"
+"    image: url(:/qfluentwidgets/images/check_box/Accept_white.svg);\n"
+"}\n"
+"\n"
+"QTableView::indicator:indeterminate {\n"
+"    image: url(:/qfluentwidgets/images/check_box/PartialAccept_white.svg);\n"
+"}\n"
+"\n"
+"QTableView::indicator:checked:hover,\n"
+"QTableView::indicator:indeterminate:hover {\n"
+"    border: 1px solid #00a7b3;\n"
+"    background-color: #00a7b3;\n"
+"}\n"
+"\n"
+"QTableView::indicator:checked:pressed,\n"
+"QTableView::indicator:indeterminate:pressed {\n"
+"    border: 1px solid #3eabb3;\n"
+"    background-color: #3eabb3;\n"
+"}\n"
+"\n"
+"QTableView::indicator:disabled {\n"
+"    border: 1px solid rgba(0, 0, 0, 0.27);\n"
+"    background-color: transparent;\n"
+"}\n"
+"\n"
+"QTableView::indicator:checked:disabled,\n"
+"QTableView::indicator:indeterminate:disabled {\n"
+"    border: 1px solid rgb(199, 199, 199);\n"
+"    background-color: rgb(199, 199, 199);\n"
+"}\n"
+"\n"
+"\n"
+"QHeaderView {\n"
+"    background-color: transparent;\n"
+"}\n"
+"\n"
+"QHeaderView::section {\n"
+"    background-color: transparent;\n"
+"    color: black;\n"
+"    padding-left: 5px;\n"
+"    padding-right: 5px;\n"
+"    border: 1px solid rgba(0, 0, 0, 19);\n"
+"    font: 13px \'Segoe UI\', \'Microsoft YaHei\', \'PingFang SC\';\n"
+"}\n"
+"\n"
+"QHeaderView::section:horizontal {\n"
+"    border-bottom: 1px solid rgba(0, 0, 0, 7);\n"
+"    border-left: none;\n"
+"    height: 40px;\n"
+"}\n"
+"\n"
+"QHeaderView::section:horizontal:last {\n"
+"    border-right: none;\n"
+"}\n"
+"\n"
+"QHeaderView::section:vertical {\n"
+"    border-top: none;\n"
+"}\n"
+"\n"
+"QHeaderView::section:checked {\n"
+"    background-color: transparent;\n"
+"}\n"
+"\n"
+"QHeaderView::down-arrow {\n"
+"    subcontrol-origin: padding;\n"
+"    subcontrol-position: center right;\n"
+"    margin-right: 6px;\n"
+"    image: url(:/qfluentwidgets/images/table_view/Down_black.svg);\n"
+"}\n"
+"\n"
+"QHeaderView::up-arrow {\n"
+"    subcontrol-origin: padding;\n"
+"    subcontrol-position: center right;\n"
+"    margin-right: 6px;\n"
+"    image: url(:/qfluentwidgets/images/table_view/Up_black.svg);\n"
+"}\n"
+"QTableCornerButton::section {\n"
+"    background-color: transparent;\n"
+"    border: 1px solid rgba(0, 0, 0, 19);\n"
+"}\n"
+"\n"
+"QTableCornerButton::section:pressed {\n"
+"    background-color: rgba(0, 0, 0, 12);\n"
+"}")
         self.TableWidget.setObjectName("TableWidget")
         self.TableWidget.setColumnCount(0)
         self.TableWidget.setRowCount(0)
         self.verticalLayout_2.addWidget(self.TableWidget)
         self.widget_5 = QtWidgets.QWidget(self.widget_3)
+        self.widget_5.setAutoFillBackground(True)
         self.widget_5.setObjectName("widget_5")
-        self.horizontalLayout_3 = QtWidgets.QHBoxLayout(self.widget_5)
-        self.horizontalLayout_3.setObjectName("horizontalLayout_3")
-        self.btn_discovery = PushButton(self.widget_5)
-        self.btn_discovery.setObjectName("btn_discovery")
-        self.horizontalLayout_3.addWidget(self.btn_discovery)
-        self.btn_add = PushButton(self.widget_5)
-        self.btn_add.setObjectName("btn_add")
-        self.horizontalLayout_3.addWidget(self.btn_add)
+        self.gridLayout = QtWidgets.QGridLayout(self.widget_5)
+        self.gridLayout.setObjectName("gridLayout")
+        self.pbtn_add = PushButton(self.widget_5)
+        self.pbtn_add.setObjectName("pbtn_add")
+        self.gridLayout.addWidget(self.pbtn_add, 1, 1, 1, 1)
+        self.pbtn_discovery = PushButton(self.widget_5)
+        self.pbtn_discovery.setObjectName("pbtn_discovery")
+        self.gridLayout.addWidget(self.pbtn_discovery, 1, 0, 1, 1)
+        self.rbtn_auto = RadioButton(self.widget_5)
+        self.rbtn_auto.setObjectName("rbtn_auto")
+        self.gridLayout.addWidget(self.rbtn_auto, 0, 0, 1, 1)
         self.verticalLayout_2.addWidget(self.widget_5)
         self.TableWidget_2 = TableWidget(self.widget_3)
         self.TableWidget_2.setObjectName("TableWidget_2")
@@ -70,13 +200,24 @@ class Ui_MainWindow(object):
         self.widget_4.setObjectName("widget_4")
         self.verticalLayout_3 = QtWidgets.QVBoxLayout(self.widget_4)
         self.verticalLayout_3.setObjectName("verticalLayout_3")
-        self.widget_7 = QtWidgets.QWidget(self.widget_4)
-        self.widget_7.setObjectName("widget_7")
-        self.verticalLayout_3.addWidget(self.widget_7)
         self.widget_6 = QtWidgets.QWidget(self.widget_4)
         self.widget_6.setObjectName("widget_6")
+        self.tableWidget = QtWidgets.QTableWidget(self.widget_6)
+        self.tableWidget.setGeometry(QtCore.QRect(290, 220, 631, 431))
+        self.tableWidget.setObjectName("tableWidget")
+        self.tableWidget.setColumnCount(0)
+        self.tableWidget.setRowCount(0)
         self.verticalLayout_3.addWidget(self.widget_6)
-        self.verticalLayout_3.setStretch(0, 4)
+        self.tabWidget = QtWidgets.QTabWidget(self.widget_4)
+        self.tabWidget.setObjectName("tabWidget")
+        self.tab = QtWidgets.QWidget()
+        self.tab.setObjectName("tab")
+        self.tabWidget.addTab(self.tab, "")
+        self.tab_2 = QtWidgets.QWidget()
+        self.tab_2.setObjectName("tab_2")
+        self.tabWidget.addTab(self.tab_2, "")
+        self.verticalLayout_3.addWidget(self.tabWidget)
+        self.verticalLayout_3.setStretch(0, 5)
         self.verticalLayout_3.setStretch(1, 2)
         self.horizontalLayout_2.addWidget(self.widget_4)
         self.horizontalLayout_2.setStretch(0, 2)
@@ -113,12 +254,15 @@ class Ui_MainWindow(object):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
         self.btn_check.setText(_translate("MainWindow", "Check"))
-        self.btn_discovery.setText(_translate("MainWindow", "Discovery"))
-        self.btn_add.setText(_translate("MainWindow", "Add"))
+        self.pbtn_add.setText(_translate("MainWindow", "Add"))
+        self.pbtn_discovery.setText(_translate("MainWindow", "Discovery"))
+        self.rbtn_auto.setText(_translate("MainWindow", "Auto Discovery"))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab), _translate("MainWindow", "Tab 1"))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_2), _translate("MainWindow", "Tab 2"))
         self.menuFile.setTitle(_translate("MainWindow", "File"))
         self.menuManger.setTitle(_translate("MainWindow", "Manger"))
         self.menuHelp.setTitle(_translate("MainWindow", "Help"))
-from qfluentwidgets import PushButton, TableWidget
+from qfluentwidgets import PushButton, RadioButton, TableWidget
 
 
 if __name__ == "__main__":

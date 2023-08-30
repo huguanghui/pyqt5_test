@@ -21,3 +21,5 @@ else:
     CONFIG_FOLDER = Path(QStandardPaths.writableLocation(QStandardPaths.AppDataLocation)) / APP_NAME
 
 CONFIG_FILE = CONFIG_FOLDER / "config.json"
+
+print(f"FOLDER: {CONFIG_FOLDER}")

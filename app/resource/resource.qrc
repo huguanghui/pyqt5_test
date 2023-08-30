@@ -1,5 +1,9 @@
 <RCC>
   <qresource prefix="/">
+    <file>qss/light/main_window.qss</file>
+
+    <file>qss/dark/main_window.qss</file>
+
     <file>images/logo/logo.ico</file>
     <file>images/logo/logo.png</file>
     <file>images/test.jpg</file>
