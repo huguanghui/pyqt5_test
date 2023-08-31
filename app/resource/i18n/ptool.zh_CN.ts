@@ -3,52 +3,52 @@
 <context>
     <name>MainWindow</name>
     <message>
-        <location filename="../../View/main_window/ui_main.py" line="255"/>
+        <location filename="../../View/main_window/ui_main.py" line="256"/>
         <source>MainWindow</source>
         <translation>主窗口</translation>
     </message>
     <message>
-        <location filename="../../View/main_window/ui_main.py" line="256"/>
+        <location filename="../../View/main_window/ui_main.py" line="257"/>
         <source>Check</source>
         <translation>检测</translation>
     </message>
     <message>
-        <location filename="../../View/main_window/ui_main.py" line="258"/>
+        <location filename="../../View/main_window/ui_main.py" line="259"/>
         <source>Discovery</source>
         <translation>搜索</translation>
     </message>
     <message>
-        <location filename="../../View/main_window/ui_main.py" line="257"/>
+        <location filename="../../View/main_window/ui_main.py" line="258"/>
         <source>Add</source>
         <translation>添加</translation>
     </message>
     <message>
-        <location filename="../../View/main_window/ui_main.py" line="262"/>
+        <location filename="../../View/main_window/ui_main.py" line="263"/>
         <source>File</source>
         <translation>文件</translation>
     </message>
     <message>
-        <location filename="../../View/main_window/ui_main.py" line="263"/>
+        <location filename="../../View/main_window/ui_main.py" line="264"/>
         <source>Manger</source>
         <translation>管理</translation>
     </message>
     <message>
-        <location filename="../../View/main_window/ui_main.py" line="264"/>
+        <location filename="../../View/main_window/ui_main.py" line="265"/>
         <source>Help</source>
         <translation>帮助</translation>
     </message>
     <message>
-        <location filename="../../View/main_window/ui_main.py" line="259"/>
+        <location filename="../../View/main_window/ui_main.py" line="260"/>
         <source>Auto Discovery</source>
         <translation>自动搜索</translation>
     </message>
     <message>
-        <location filename="../../View/main_window/ui_main.py" line="260"/>
+        <location filename="../../View/main_window/ui_main.py" line="261"/>
         <source>Tab 1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../View/main_window/ui_main.py" line="261"/>
+        <location filename="../../View/main_window/ui_main.py" line="262"/>
         <source>Tab 2</source>
         <translation type="unfinished"></translation>
     </message>

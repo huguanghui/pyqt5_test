@@ -9,7 +9,6 @@ from PyQt5.QtCore import Qt, QUrl
 from PyQt5.QtGui import QIcon, QDesktopServices
 from PyQt5.QtWidgets import QApplication, QFrame, QHBoxLayout, QMainWindow
 
-from qframelesswindow import FramelessWindow, AcrylicWindow
 from qfluentwidgets import (NavigationItemPosition, MessageBox, setTheme, Theme, NavigationAvatarWidget, qrouter, SubtitleLabel, setFont, InfoBadge)
 from qfluentwidgets import FluentIcon as FIF
 
