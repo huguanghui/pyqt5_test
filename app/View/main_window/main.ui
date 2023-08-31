@@ -52,9 +52,9 @@
         <number>0</number>
        </property>
        <item>
-        <widget class="PushButton" name="btn_check">
+        <widget class="QPushButton" name="pushButton">
          <property name="text">
-          <string>Check</string>
+          <string>PushButton</string>
          </property>
         </widget>
        </item>
@@ -99,134 +99,9 @@
          </property>
          <layout class="QVBoxLayout" name="verticalLayout_2">
           <item>
-           <widget class="TableWidget" name="TableWidget">
+           <widget class="QTableWidget" name="TableWidget">
             <property name="styleSheet">
-             <string notr="true">QTableView {
-    background: transparent;
-    outline: none;
-    border: none;
-    /* font: 13px 'Segoe UI', 'Microsoft YaHei'; */
-    selection-background-color: transparent;
-    alternate-background-color: transparent;
-}
-
-QTableView::item {
-    background: transparent;
-    border: 0px;
-    padding-left: 16px;
-    padding-right: 16px;
-    height: 35px;
-}
-
-
-QTableView::indicator {
-    width: 18px;
-    height: 18px;
-    border-radius: 5px;
-    border: 1px solid rgba(0, 0, 0, 0.48);
-    background-color: rgba(0, 0, 0, 0.022);
-}
-
-QTableView::indicator:hover {
-    border: 1px solid rgba(0, 0, 0, 0.56);
-    background-color: rgba(0, 0, 0, 0.05);
-}
-
-QTableView::indicator:pressed {
-    border: 1px solid rgba(0, 0, 0, 0.27);
-    background-color: rgba(0, 0, 0, 0.12);
-}
-
-QTableView::indicator:checked,
-QTableView::indicator:indeterminate {
-    border: 1px solid #009faa;
-    background-color: #009faa;
-}
-
-QTableView::indicator:checked {
-    image: url(:/qfluentwidgets/images/check_box/Accept_white.svg);
-}
-
-QTableView::indicator:indeterminate {
-    image: url(:/qfluentwidgets/images/check_box/PartialAccept_white.svg);
-}
-
-QTableView::indicator:checked:hover,
-QTableView::indicator:indeterminate:hover {
-    border: 1px solid #00a7b3;
-    background-color: #00a7b3;
-}
-
-QTableView::indicator:checked:pressed,
-QTableView::indicator:indeterminate:pressed {
-    border: 1px solid #3eabb3;
-    background-color: #3eabb3;
-}
-
-QTableView::indicator:disabled {
-    border: 1px solid rgba(0, 0, 0, 0.27);
-    background-color: transparent;
-}
-
-QTableView::indicator:checked:disabled,
-QTableView::indicator:indeterminate:disabled {
-    border: 1px solid rgb(199, 199, 199);
-    background-color: rgb(199, 199, 199);
-}
-
-
-QHeaderView {
-    background-color: transparent;
-}
-
-QHeaderView::section {
-    background-color: transparent;
-    color: black;
-    padding-left: 5px;
-    padding-right: 5px;
-    border: 1px solid rgba(0, 0, 0, 19);
-    font: 13px 'Segoe UI', 'Microsoft YaHei', 'PingFang SC';
-}
-
-QHeaderView::section:horizontal {
-    border-bottom: 1px solid rgba(0, 0, 0, 7);
-    border-left: none;
-    height: 40px;
-}
-
-QHeaderView::section:horizontal:last {
-    border-right: none;
-}
-
-QHeaderView::section:vertical {
-    border-top: none;
-}
-
-QHeaderView::section:checked {
-    background-color: transparent;
-}
-
-QHeaderView::down-arrow {
-    subcontrol-origin: padding;
-    subcontrol-position: center right;
-    margin-right: 6px;
-    image: url(:/qfluentwidgets/images/table_view/Down_black.svg);
-}
-
-QHeaderView::up-arrow {
-    subcontrol-origin: padding;
-    subcontrol-position: center right;
-    margin-right: 6px;
-    image: url(:/qfluentwidgets/images/table_view/Up_black.svg);
-}
-QTableCornerButton::section {
-    background-color: transparent;
-    border: 1px solid rgba(0, 0, 0, 19);
-}
-
-QTableCornerButton::section:pressed {
-    background-color: rgba(0, 0, 0, 12);
-}</string>
+             <string notr="true"/>
             </property>
            </widget>
           </item>
@@ -236,24 +111,24 @@ QTableCornerButton::section:pressed {
              <bool>true</bool>
             </property>
             <layout class="QGridLayout" name="gridLayout">
-             <item row="1" column="1">
-              <widget class="PushButton" name="pbtn_add">
-               <property name="text">
-                <string>Add</string>
-               </property>
-              </widget>
-             </item>
              <item row="1" column="0">
-              <widget class="PushButton" name="pbtn_discovery">
+              <widget class="QPushButton" name="pushButton_2">
                <property name="text">
                 <string>Discovery</string>
                </property>
               </widget>
              </item>
-             <item row="0" column="0">
-              <widget class="RadioButton" name="rbtn_auto">
+             <item row="1" column="1">
+              <widget class="QPushButton" name="pushButton_3">
                <property name="text">
-                <string>Auto Discovery</string>
+                <string>Add</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="0">
+              <widget class="QCheckBox" name="checkBox">
+               <property name="text">
+                <string>CheckBox</string>
                </property>
               </widget>
              </item>
@@ -261,7 +136,7 @@ QTableCornerButton::section:pressed {
            </widget>
           </item>
           <item>
-           <widget class="TableWidget" name="TableWidget_2"/>
+           <widget class="QTableWidget" name="TableWidget_2"/>
           </item>
          </layout>
         </widget>
@@ -270,18 +145,7 @@ QTableCornerButton::section:pressed {
         <widget class="QWidget" name="widget_4" native="true">
          <layout class="QVBoxLayout" name="verticalLayout_3" stretch="5,2">
           <item>
-           <widget class="QWidget" name="widget_6" native="true">
-            <widget class="QTableWidget" name="tableWidget">
-             <property name="geometry">
-              <rect>
-               <x>290</x>
-               <y>220</y>
-               <width>631</width>
-               <height>431</height>
-              </rect>
-             </property>
-            </widget>
-           </widget>
+           <widget class="QWidget" name="widget_6" native="true"/>
           </item>
           <item>
            <widget class="QTabWidget" name="tabWidget">
@@ -353,23 +217,6 @@ QTableCornerButton::section:pressed {
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
- <customwidgets>
-  <customwidget>
-   <class>PushButton</class>
-   <extends>QPushButton</extends>
-   <header>qfluentwidgets</header>
-  </customwidget>
-  <customwidget>
-   <class>RadioButton</class>
-   <extends>QRadioButton</extends>
-   <header>qfluentwidgets</header>
-  </customwidget>
-  <customwidget>
-   <class>TableWidget</class>
-   <extends>QTableWidget</extends>
-   <header>qfluentwidgets</header>
-  </customwidget>
- </customwidgets>
  <resources/>
  <connections/>
 </ui>

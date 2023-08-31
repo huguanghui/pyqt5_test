@@ -3,53 +3,63 @@
 <context>
     <name>MainWindow</name>
     <message>
-        <location filename="../../View/main_window/ui_main.py" line="256"/>
+        <location filename="../../View/main_window/ui_main.py" line="126"/>
         <source>MainWindow</source>
         <translation>主窗口</translation>
     </message>
     <message>
         <location filename="../../View/main_window/ui_main.py" line="257"/>
         <source>Check</source>
-        <translation>检测</translation>
+        <translation type="obsolete">检测</translation>
     </message>
     <message>
-        <location filename="../../View/main_window/ui_main.py" line="259"/>
+        <location filename="../../View/main_window/ui_main.py" line="128"/>
         <source>Discovery</source>
         <translation>搜索</translation>
     </message>
     <message>
-        <location filename="../../View/main_window/ui_main.py" line="258"/>
+        <location filename="../../View/main_window/ui_main.py" line="129"/>
         <source>Add</source>
         <translation>添加</translation>
     </message>
     <message>
-        <location filename="../../View/main_window/ui_main.py" line="263"/>
+        <location filename="../../View/main_window/ui_main.py" line="133"/>
         <source>File</source>
         <translation>文件</translation>
     </message>
     <message>
-        <location filename="../../View/main_window/ui_main.py" line="264"/>
+        <location filename="../../View/main_window/ui_main.py" line="134"/>
         <source>Manger</source>
         <translation>管理</translation>
     </message>
     <message>
-        <location filename="../../View/main_window/ui_main.py" line="265"/>
+        <location filename="../../View/main_window/ui_main.py" line="135"/>
         <source>Help</source>
         <translation>帮助</translation>
     </message>
     <message>
         <location filename="../../View/main_window/ui_main.py" line="260"/>
         <source>Auto Discovery</source>
-        <translation>自动搜索</translation>
+        <translation type="obsolete">自动搜索</translation>
     </message>
     <message>
-        <location filename="../../View/main_window/ui_main.py" line="261"/>
+        <location filename="../../View/main_window/ui_main.py" line="131"/>
         <source>Tab 1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../View/main_window/ui_main.py" line="262"/>
+        <location filename="../../View/main_window/ui_main.py" line="132"/>
         <source>Tab 2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../View/main_window/ui_main.py" line="127"/>
+        <source>PushButton</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../View/main_window/ui_main.py" line="130"/>
+        <source>CheckBox</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
