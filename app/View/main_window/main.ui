@@ -210,12 +210,18 @@
     <property name="title">
      <string>Help</string>
     </property>
+    <addaction name="actionVersion"/>
    </widget>
    <addaction name="menuFile"/>
    <addaction name="menuManger"/>
    <addaction name="menuHelp"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionVersion">
+   <property name="text">
+    <string>Version</string>
+   </property>
+  </action>
  </widget>
  <resources/>
  <connections/>

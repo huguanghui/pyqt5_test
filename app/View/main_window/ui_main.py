@@ -114,6 +114,9 @@ class Ui_MainWindow(object):
         self.statusbar = QtWidgets.QStatusBar(MainWindow)
         self.statusbar.setObjectName("statusbar")
         MainWindow.setStatusBar(self.statusbar)
+        self.actionVersion = QtWidgets.QAction(MainWindow)
+        self.actionVersion.setObjectName("actionVersion")
+        self.menuHelp.addAction(self.actionVersion)
         self.menubar.addAction(self.menuFile.menuAction())
         self.menubar.addAction(self.menuManger.menuAction())
         self.menubar.addAction(self.menuHelp.menuAction())
@@ -133,6 +136,7 @@ class Ui_MainWindow(object):
         self.menuFile.setTitle(_translate("MainWindow", "File"))
         self.menuManger.setTitle(_translate("MainWindow", "Manger"))
         self.menuHelp.setTitle(_translate("MainWindow", "Help"))
+        self.actionVersion.setText(_translate("MainWindow", "Version"))
 
 
 if __name__ == "__main__":

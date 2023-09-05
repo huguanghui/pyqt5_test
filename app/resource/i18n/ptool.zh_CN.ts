@@ -3,7 +3,7 @@
 <context>
     <name>MainWindow</name>
     <message>
-        <location filename="../../View/main_window/ui_main.py" line="126"/>
+        <location filename="../../View/main_window/ui_main.py" line="129"/>
         <source>MainWindow</source>
         <translation>主窗口</translation>
     </message>
@@ -13,27 +13,27 @@
         <translation type="obsolete">检测</translation>
     </message>
     <message>
-        <location filename="../../View/main_window/ui_main.py" line="128"/>
+        <location filename="../../View/main_window/ui_main.py" line="131"/>
         <source>Discovery</source>
         <translation>搜索</translation>
     </message>
     <message>
-        <location filename="../../View/main_window/ui_main.py" line="129"/>
+        <location filename="../../View/main_window/ui_main.py" line="132"/>
         <source>Add</source>
         <translation>添加</translation>
     </message>
     <message>
-        <location filename="../../View/main_window/ui_main.py" line="133"/>
+        <location filename="../../View/main_window/ui_main.py" line="136"/>
         <source>File</source>
         <translation>文件</translation>
     </message>
     <message>
-        <location filename="../../View/main_window/ui_main.py" line="134"/>
+        <location filename="../../View/main_window/ui_main.py" line="137"/>
         <source>Manger</source>
         <translation>管理</translation>
     </message>
     <message>
-        <location filename="../../View/main_window/ui_main.py" line="135"/>
+        <location filename="../../View/main_window/ui_main.py" line="138"/>
         <source>Help</source>
         <translation>帮助</translation>
     </message>
@@ -43,24 +43,29 @@
         <translation type="obsolete">自动搜索</translation>
     </message>
     <message>
-        <location filename="../../View/main_window/ui_main.py" line="131"/>
+        <location filename="../../View/main_window/ui_main.py" line="134"/>
         <source>Tab 1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../View/main_window/ui_main.py" line="132"/>
+        <location filename="../../View/main_window/ui_main.py" line="135"/>
         <source>Tab 2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../View/main_window/ui_main.py" line="127"/>
+        <location filename="../../View/main_window/ui_main.py" line="130"/>
         <source>PushButton</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../View/main_window/ui_main.py" line="130"/>
+        <location filename="../../View/main_window/ui_main.py" line="133"/>
         <source>CheckBox</source>
-        <translation type="unfinished"></translation>
+        <translation>检测</translation>
+    </message>
+    <message>
+        <location filename="../../View/main_window/ui_main.py" line="139"/>
+        <source>Version</source>
+        <translation>版本</translation>
     </message>
 </context>
 <context>

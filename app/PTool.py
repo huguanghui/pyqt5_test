@@ -28,8 +28,9 @@ if __name__ == "__main__":
     QApplication.setAttribute(Qt.AA_EnableHighDpiScaling)
     QApplication.setAttribute(Qt.AA_UseHighDpiPixmaps)
 
-    app = QApplication(sys.argv)
-    app.setApplicationName(APP_NAME)
+    # app = QApplication(sys.argv)
+    # app.setApplicationName(APP_NAME)
+    app = SingletonApplication(sys.argv, APP_NAME)
     translator = QTranslator()
     language = config.get(config.language)  # type: Language
     print("language:", QLocale.system().name())
