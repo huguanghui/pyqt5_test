@@ -5,7 +5,7 @@ from components.layout.expand_layout import ExpandLayout
 from components.widgets.scroll_area import SmoothScrollArea
 from PyQt5.QtCore import Qt, pyqtSignal, QOperatingSystemVersion
 from PyQt5.QtWidgets import QLabel, QFrame, QHBoxLayout
-from qfluentwidgets import (SubtitleLabel, setFont)
+# from qfluentwidgets import (SubtitleLabel, setFont)
 
 
 class SettingInterface(QFrame):
@@ -20,10 +20,10 @@ class SettingInterface(QFrame):
 
     def __init__(self, parent=None):
         super().__init__(parent=parent)
-        self.label = SubtitleLabel("setting", self)
+        # self.label = SubtitleLabel("setting", self)
         self.hBoxLayout = QHBoxLayout(self)
 
-        setFont(self.label, 24)
+        # setFont(self.label, 24)
         self.label.setAlignment(Qt.AlignCenter)
         self.hBoxLayout.addWidget(self.label, 1, Qt.AlignCenter)
         self.setObjectName("settings")

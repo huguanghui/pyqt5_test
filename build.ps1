@@ -10,7 +10,7 @@ Write-Host "Pyqt5 build..." -ForegroundColor green
 # designer.exe .\01_QThread\GUI\Main.ui
 
 # compile
-C:\Users\LENOVO\AppData\Roaming\Python\Python39\Scripts\pyuic5.exe ./01_QThread/GUI/Main.ui -o ./01_QThread/GUI/Ui_Main.py -x
+pyuic5.exe ./01_QThread/GUI/Main.ui -o ./01_QThread/GUI/Ui_Main.py -x
 # C:\Users\LENOVO\AppData\Roaming\Python\Python39\Scripts\pyuic5.exe ./01_BurnTest/GUI/Login.ui -o ./01_BurnTest/GUI/Ui_Login.py -x
 
 # C:\ProgramData\Miniconda3\Scripts\pyuic5.exe ./01_BurnTest/GUI/Main.ui -o ./01_BurnTest/GUI/Ui_Main.py -x
