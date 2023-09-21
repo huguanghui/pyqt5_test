@@ -4,7 +4,7 @@ Write-Host "Pyqt5 build..." -ForegroundColor green
 pyrcc5.exe ./resource/resource.qrc -o ./common/resource.py
 
 # designer
-designer.exe .\View\main_window\main.ui
+# designer.exe .\View\main_window\main.ui
 
 # compile
 pyuic5.exe ./View/main_window/main.ui -o ./View/main_window/ui_main.py -x

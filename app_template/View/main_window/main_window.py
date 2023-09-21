@@ -12,8 +12,6 @@ from PyQt5.QtCore import Qt, QUrl
 from PyQt5.QtGui import QIcon, QDesktopServices
 from PyQt5.QtWidgets import QApplication, QFrame, QHBoxLayout, QMainWindow
 
-from View.page01 import Page01Test
-from View.page02 import Page02Test
 from View.setting_interface import SettingInterface
 
 from .ui_main import Ui_MainWindow
