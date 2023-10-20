@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS><TS version="2.0" language="zh_CN" sourcelanguage="en">
+<!DOCTYPE TS>
+<TS version="2.1" language="zh_CN" sourcelanguage="en">
 <context>
     <name>MainWindow</name>
     <message>
@@ -58,17 +59,17 @@
     <message>
         <location filename="../../View/page01/ui_page01.py" line="68"/>
         <source>Form</source>
-        <translation>表格</translation>
+        <translation type="obsolete">表格</translation>
     </message>
     <message>
         <location filename="../../View/page01/ui_page01.py" line="69"/>
         <source>Radio button</source>
-        <translation>单选</translation>
+        <translation type="obsolete">单选</translation>
     </message>
     <message>
         <location filename="../../View/page01/ui_page01.py" line="70"/>
         <source>Toggle button</source>
-        <translation>触发</translation>
+        <translation type="obsolete">触发</translation>
     </message>
 </context>
 <context>
@@ -76,7 +77,7 @@
     <message>
         <location filename="../../View/page02/ui_page02.py" line="45"/>
         <source>Form</source>
-        <translation>表格</translation>
+        <translation type="obsolete">表格</translation>
     </message>
 </context>
 </TS>

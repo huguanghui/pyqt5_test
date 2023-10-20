@@ -28,7 +28,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         self.initWidget()
 
     def initWindow(self):
-        self.resize(1600, 1200)
+        self.resize(800, 600)
         self.setWindowIcon(QIcon(':/images/logo/logo.png'))
         self.setWindowTitle(APP_NAME)
 
