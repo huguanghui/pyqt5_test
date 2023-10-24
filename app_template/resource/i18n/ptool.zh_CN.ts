@@ -4,7 +4,7 @@
 <context>
     <name>MainWindow</name>
     <message>
-        <location filename="../../View/main_window/ui_main.py" line="57"/>
+        <location filename="../../View/main_window/ui_main.py" line="60"/>
         <source>MainWindow</source>
         <translation>主窗口</translation>
     </message>
@@ -24,19 +24,19 @@
         <translation type="obsolete">添加</translation>
     </message>
     <message>
-        <location filename="../../View/main_window/ui_main.py" line="58"/>
+        <location filename="../../View/main_window/ui_main.py" line="61"/>
         <source>File</source>
         <translation>文件</translation>
     </message>
     <message>
-        <location filename="../../View/main_window/ui_main.py" line="59"/>
+        <location filename="../../View/main_window/ui_main.py" line="62"/>
         <source>Manger</source>
         <translation>管理</translation>
     </message>
     <message>
-        <location filename="../../View/main_window/ui_main.py" line="60"/>
+        <location filename="../../View/main_window/ui_main.py" line="65"/>
         <source>Help</source>
-        <translation>帮助</translation>
+        <translation>用户手册</translation>
     </message>
     <message>
         <location filename="../../View/main_window/ui_main.py" line="260"/>
@@ -51,7 +51,17 @@
     <message>
         <location filename="../../View/main_window/ui_main.py" line="61"/>
         <source>Version</source>
-        <translation>版本</translation>
+        <translation type="obsolete">版本</translation>
+    </message>
+    <message>
+        <location filename="../../View/main_window/ui_main.py" line="63"/>
+        <source>About</source>
+        <translation>关于</translation>
+    </message>
+    <message>
+        <location filename="../../View/main_window/ui_main.py" line="64"/>
+        <source>Upgrade</source>
+        <translation>检查更新</translation>
     </message>
 </context>
 <context>

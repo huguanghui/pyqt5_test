@@ -14,7 +14,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(1600, 1200)
+        MainWindow.resize(998, 651)
         MainWindow.setLocale(QtCore.QLocale(QtCore.QLocale.English, QtCore.QLocale.UnitedStates))
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
@@ -24,7 +24,7 @@ class Ui_MainWindow(object):
         self.verticalLayout.setObjectName("verticalLayout")
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(MainWindow)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 1600, 26))
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 998, 26))
         self.menubar.setDefaultUp(False)
         self.menubar.setObjectName("menubar")
         self.menuFile = QtWidgets.QMenu(self.menubar)
@@ -44,6 +44,9 @@ class Ui_MainWindow(object):
         MainWindow.setStatusBar(self.statusbar)
         self.actionVersion = QtWidgets.QAction(MainWindow)
         self.actionVersion.setObjectName("actionVersion")
+        self.actionHelp = QtWidgets.QAction(MainWindow)
+        self.actionHelp.setObjectName("actionHelp")
+        self.menuHelp.addAction(self.actionHelp)
         self.menuHelp.addAction(self.actionVersion)
         self.menubar.addAction(self.menuFile.menuAction())
         self.menubar.addAction(self.menuManger.menuAction())
@@ -57,8 +60,9 @@ class Ui_MainWindow(object):
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
         self.menuFile.setTitle(_translate("MainWindow", "File"))
         self.menuManger.setTitle(_translate("MainWindow", "Manger"))
-        self.menuHelp.setTitle(_translate("MainWindow", "Help"))
-        self.actionVersion.setText(_translate("MainWindow", "Version"))
+        self.menuHelp.setTitle(_translate("MainWindow", "About"))
+        self.actionVersion.setText(_translate("MainWindow", "Upgrade"))
+        self.actionHelp.setText(_translate("MainWindow", "Help"))
 
 
 if __name__ == "__main__":
