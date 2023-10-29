@@ -2,9 +2,17 @@
 <!DOCTYPE TS>
 <TS version="2.1" language="zh_CN" sourcelanguage="en">
 <context>
+    <name>Help</name>
+    <message>
+        <location filename="../../View/help_widget/ui_help.py" line="29"/>
+        <source>Form</source>
+        <translation type="unfinished">表格</translation>
+    </message>
+</context>
+<context>
     <name>MainWindow</name>
     <message>
-        <location filename="../../View/main_window/ui_main.py" line="60"/>
+        <location filename="../../View/main_window/ui_main.py" line="53"/>
         <source>MainWindow</source>
         <translation>主窗口</translation>
     </message>
@@ -26,15 +34,15 @@
     <message>
         <location filename="../../View/main_window/ui_main.py" line="61"/>
         <source>File</source>
-        <translation>文件</translation>
+        <translation type="obsolete">文件</translation>
     </message>
     <message>
         <location filename="../../View/main_window/ui_main.py" line="62"/>
         <source>Manger</source>
-        <translation>管理</translation>
+        <translation type="obsolete">管理</translation>
     </message>
     <message>
-        <location filename="../../View/main_window/ui_main.py" line="65"/>
+        <location filename="../../View/main_window/ui_main.py" line="56"/>
         <source>Help</source>
         <translation>用户手册</translation>
     </message>
@@ -54,12 +62,12 @@
         <translation type="obsolete">版本</translation>
     </message>
     <message>
-        <location filename="../../View/main_window/ui_main.py" line="63"/>
+        <location filename="../../View/main_window/ui_main.py" line="54"/>
         <source>About</source>
         <translation>关于</translation>
     </message>
     <message>
-        <location filename="../../View/main_window/ui_main.py" line="64"/>
+        <location filename="../../View/main_window/ui_main.py" line="55"/>
         <source>Upgrade</source>
         <translation>检查更新</translation>
     </message>
