@@ -86,3 +86,8 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         """ connect signal to slot """
 
         self.actionVersion.triggered.connect(self.checkUpdate)
+        self.actionHelp.triggered.connect(self.helpDoc)
+
+    def helpDoc(self):
+        print('Help')
+        QDesktopServices.openUrl(QUrl.fromLocalFile("Readme.html"))
