@@ -2,6 +2,29 @@
 <!DOCTYPE TS>
 <TS version="2.1" language="zh_CN" sourcelanguage="en">
 <context>
+    <name>CheckUpdate</name>
+    <message>
+        <location filename="../../View/update/ui_check_update.py" line="55"/>
+        <source>检查更新</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../View/update/ui_check_update.py" line="56"/>
+        <source>自动更新</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../View/update/ui_check_update.py" line="57"/>
+        <source>立刻更新</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../View/update/ui_check_update.py" line="58"/>
+        <source>以后再说</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>Help</name>
     <message>
         <location filename="../../View/help_widget/ui_help.py" line="29"/>
