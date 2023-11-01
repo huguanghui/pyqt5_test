@@ -24,6 +24,7 @@ class Ui_MainWindow(object):
         self.mdiArea = QtWidgets.QMdiArea(self.centralwidget)
         self.mdiArea.setVerticalScrollBarPolicy(QtCore.Qt.ScrollBarAsNeeded)
         self.mdiArea.setHorizontalScrollBarPolicy(QtCore.Qt.ScrollBarAsNeeded)
+        self.mdiArea.setSizeAdjustPolicy(QtWidgets.QAbstractScrollArea.AdjustIgnored)
         self.mdiArea.setViewMode(QtWidgets.QMdiArea.TabbedView)
         self.mdiArea.setTabsClosable(True)
         self.mdiArea.setTabsMovable(True)

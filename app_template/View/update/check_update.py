@@ -14,6 +14,8 @@ import requests
 import time
 
 from components.widgets.custom import critical_win
+from common.config import config
+
 from .ui_check_update import Ui_CheckUpdate
 
 VERSION_NUMS_LEN = 3
@@ -143,6 +145,8 @@ class CheckUpdate(QDialog):
         super().__init__(parent=parent)
         self.ui = Ui_CheckUpdate()
         self.ui.setupUi(self)
+        self.autoupdate = config.get(config.checkUpdateAtStartUp)
+        self.ui.autoupdate.setChecked(self.autoupdate)
         # self.ui.autoupdate.stateChanged.connect(self.set_autoupdate_param)
         self.ui.ok.clicked.connect(self.start_update)
         self.ui.cancel.clicked.connect(lambda: self.close())

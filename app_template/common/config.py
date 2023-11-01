@@ -10,7 +10,6 @@ from PyQt5.QtCore import Qt, QStandardPaths, QObject, pyqtSignal
 from PyQt5.QtGui import QColor, QFont, QGuiApplication
 from PyQt5.QtMultimedia import QMediaPlaylist
 
-from .quality import MvQuality, SongQuality
 from .exception_handler import exceptionHandler
 from .singleton import Singleton
 from .setting import APP_NAME, CONFIG_FOLDER, CONFIG_FILE
@@ -264,22 +263,6 @@ class ColorConfigItem(ConfigItem):
 class Config(Singleton, QObject):
     """ Config of app """
 
-    # folders
-    musicFolders = ConfigItem(
-        "Folders", "LocalMusic", [], FolderListValidator())
-    downloadFolder = ConfigItem(
-        "Folders", "Download", QStandardPaths.writableLocation(QStandardPaths.MusicLocation), FolderValidator())
-    cacheFolder = ConfigItem(
-        "Folders", "CacheFolder", Path(QStandardPaths.writableLocation(QStandardPaths.AppLocalDataLocation))/APP_NAME, FolderValidator(), restart=True)
-
-    # online
-    onlineSongQuality = OptionsConfigItem(
-        "Online", "SongQuality", SongQuality.STANDARD, OptionsValidator(SongQuality), EnumSerializer(SongQuality))
-    onlinePageSize = RangeConfigItem(
-        "Online", "PageSize", 30, RangeValidator(0, 50))
-    onlineMvQuality = OptionsConfigItem(
-        "Online", "MvQuality", MvQuality.FULL_HD, OptionsValidator(MvQuality), EnumSerializer(MvQuality))
-
     # main window
     enableAcrylicBackground = ConfigItem(
         "MainWindow", "EnableAcrylicBackground", False, BoolValidator())
@@ -333,12 +316,6 @@ class Config(Singleton, QObject):
         "DesktopLyric", "FontFamily", "Microsoft YaHei")
     deskLyricAlignment = OptionsConfigItem(
         "DesktopLyric", "Alignment", "Center", OptionsValidator(["Center", "Left", "Right"]))
-
-    # embedded lyrics
-    preferEmbedLyric = ConfigItem(
-        "EmbeddedLyric", "PreferEmbedded", True, BoolValidator())
-    embedLyricWhenSave = ConfigItem(
-        "EmbeddedLyric", "EmbedWhenSave", False, BoolValidator())    # embed lyric when saving song info
 
     # software update
     checkUpdateAtStartUp = ConfigItem(
@@ -397,7 +374,9 @@ class Config(Singleton, QObject):
         try:
             with open(CONFIG_FILE, encoding="utf-8") as f:
                 cfg = json.load(f)
-        except:
+        except FileNotFoundError:
+            cfg = {}
+        except json.JSONDecodeError:
             cfg = {}
 
         # map config items'key to item

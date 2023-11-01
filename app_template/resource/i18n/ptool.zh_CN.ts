@@ -48,7 +48,7 @@
 <context>
     <name>MainWindow</name>
     <message>
-        <location filename="../../View/main_window/ui_main.py" line="63"/>
+        <location filename="../../View/main_window/ui_main.py" line="64"/>
         <source>MainWindow</source>
         <translation>主窗口</translation>
     </message>
@@ -78,7 +78,7 @@
         <translation type="obsolete">管理</translation>
     </message>
     <message>
-        <location filename="../../View/main_window/ui_main.py" line="67"/>
+        <location filename="../../View/main_window/ui_main.py" line="68"/>
         <source>Help</source>
         <translation>用户手册</translation>
     </message>
@@ -98,22 +98,22 @@
         <translation type="obsolete">版本</translation>
     </message>
     <message>
-        <location filename="../../View/main_window/ui_main.py" line="64"/>
+        <location filename="../../View/main_window/ui_main.py" line="65"/>
         <source>About</source>
         <translation>关于</translation>
     </message>
     <message>
-        <location filename="../../View/main_window/ui_main.py" line="66"/>
+        <location filename="../../View/main_window/ui_main.py" line="67"/>
         <source>Upgrade</source>
         <translation>检查更新</translation>
     </message>
     <message>
-        <location filename="../../View/main_window/ui_main.py" line="65"/>
+        <location filename="../../View/main_window/ui_main.py" line="66"/>
         <source>Tool</source>
         <translation>工具</translation>
     </message>
     <message>
-        <location filename="../../View/main_window/ui_main.py" line="68"/>
+        <location filename="../../View/main_window/ui_main.py" line="69"/>
         <source>Demo</source>
         <translation>示例</translation>
     </message>
