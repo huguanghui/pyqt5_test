@@ -25,6 +25,19 @@
     </message>
 </context>
 <context>
+    <name>Demo</name>
+    <message>
+        <location filename="../../View/tool/ui_demo.py" line="39"/>
+        <source>Demo</source>
+        <translation type="unfinished">示例</translation>
+    </message>
+    <message>
+        <location filename="../../View/tool/ui_demo.py" line="40"/>
+        <source>PushButton</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>Help</name>
     <message>
         <location filename="../../View/help_widget/ui_help.py" line="29"/>
@@ -35,7 +48,7 @@
 <context>
     <name>MainWindow</name>
     <message>
-        <location filename="../../View/main_window/ui_main.py" line="53"/>
+        <location filename="../../View/main_window/ui_main.py" line="63"/>
         <source>MainWindow</source>
         <translation>主窗口</translation>
     </message>
@@ -65,7 +78,7 @@
         <translation type="obsolete">管理</translation>
     </message>
     <message>
-        <location filename="../../View/main_window/ui_main.py" line="56"/>
+        <location filename="../../View/main_window/ui_main.py" line="67"/>
         <source>Help</source>
         <translation>用户手册</translation>
     </message>
@@ -85,14 +98,24 @@
         <translation type="obsolete">版本</translation>
     </message>
     <message>
-        <location filename="../../View/main_window/ui_main.py" line="54"/>
+        <location filename="../../View/main_window/ui_main.py" line="64"/>
         <source>About</source>
         <translation>关于</translation>
     </message>
     <message>
-        <location filename="../../View/main_window/ui_main.py" line="55"/>
+        <location filename="../../View/main_window/ui_main.py" line="66"/>
         <source>Upgrade</source>
         <translation>检查更新</translation>
+    </message>
+    <message>
+        <location filename="../../View/main_window/ui_main.py" line="65"/>
+        <source>Tool</source>
+        <translation>工具</translation>
+    </message>
+    <message>
+        <location filename="../../View/main_window/ui_main.py" line="68"/>
+        <source>Demo</source>
+        <translation>示例</translation>
     </message>
 </context>
 <context>
